@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author galax
+ *
+ */
+module Chess {
+}
