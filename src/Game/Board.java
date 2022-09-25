@@ -9,7 +9,7 @@ public class Board extends JFrame{
 	}
 	
 	
-	Panel panel;
+	static Panel panel;
 	
 	Board(){
 		panel = new Panel();
