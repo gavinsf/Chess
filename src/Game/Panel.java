@@ -22,25 +22,27 @@ public class Panel extends JPanel{
 		
 		g2.scale(width/preferredSize, height/preferredSize);
 		
-		Color lightGreen = new Color(177, 215, 180);
-		Color darkGreen = new Color(127, 183, 126);
+		Color lightBoard = new Color(191, 200, 173);
+		Color darkBoard = new Color(144, 180, 148);
 		
-		for(int x = 0, y = 0; y != 8; x++ ) {
-			if (x == 8) {
+		boolean light = true;
+		for (int x = 0, y = 0; y < 8; x++) { // Making board
+			if (x == 9) {
 				x = 0;
 				y++;
-			}
-			else if (x % 2 == 0) {
-				System.out.print(x);
-				g2.setColor(lightGreen);
+			} 
+			
+			if (light == true) {
+				g2.setColor(lightBoard);
 				g2.fill(new Rectangle2D.Double(x*100, y*100,
-						   width/8, height/8));
-			}
+						   preferredSize/8, preferredSize/8));
+			} 
 			else {
-				g2.setColor(darkGreen);
+				g2.setColor(darkBoard);
 				g2.fill(new Rectangle2D.Double(x*100, y*100,
-						   width/8, height/8));
+						preferredSize/8, height/8));
 			}
+			light = !light;
 		}
 	}
 }
