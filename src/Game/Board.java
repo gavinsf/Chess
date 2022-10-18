@@ -21,6 +21,7 @@ public class Board extends JFrame{
 		
 		this.setLocationRelativeTo(null);
 		this.setVisible(true);
+		
 	}
 	
 	

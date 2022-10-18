@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author gavinsf
+ * @author galax
  *
  */
 module Chess {
